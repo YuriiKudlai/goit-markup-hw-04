@@ -99,7 +99,7 @@ body {
 .nav-header {
   display: flex;
   align-items: center;
-  margin-right: 331px;
+  margin-right: 305px;
 }
 
 .header-container {
@@ -138,13 +138,33 @@ body {
 
 /*---------------header-contacts---------------*/
 
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.icon-header {
+  display: flex;
+}
+
+.icon-header:hover {
+  fill: var(--accent-color);
+}
+
 .header-contacts {
   display: flex;
   align-items: center;
 }
 
 .header-contacts .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .header-contacts .link {
@@ -156,6 +176,7 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 /*---------------hero---------------*/
