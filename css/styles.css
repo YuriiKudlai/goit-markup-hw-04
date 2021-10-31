@@ -322,9 +322,10 @@ body {
 /*---------------our-team---------------*/
 
 .icon-container-team {
+  display: flex;
+  align-items: center;
   width: 206px;
   height: 44px;
-  outline: 2px solid blue;
   margin-top: 16px;
 }
 
@@ -334,6 +335,17 @@ body {
   justify-content: center;
 }
 
+.icon-ref {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-ref:hover {
+  border-radius: 50%;
+}
 .icon-flex {
   display: flex;
   align-items: center;
@@ -342,8 +354,21 @@ body {
 .icon-team {
   display: flex;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.icon-social-team .icon-flex:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-ref:hover {
+  background-color: var(--accent-color);
+}
+
+.icon-ref:hover .icon-team {
+  fill: var(--primary-white-color);
 }
 
 .our-team {
@@ -386,18 +411,72 @@ body {
   text-align: center;
 }
 
+/*---------------clients---------------*/
+
 .icon-clients-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .icon-clients {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
+}
+
+.clients-container:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-container:hover .icon-clients {
+  fill: var(--accent-color);
+}
+
+.list-container .list-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-container {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #afb1b8 solid 1px;
+  border-radius: 4px;
 }
 
 /*---------------footer---------------*/
+
+.icon-ref-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.icon-team-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.icon-ref-footer:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-attachment {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
 
 .logo-container > .logo {
   padding-top: 0px;
@@ -406,7 +485,8 @@ body {
 }
 
 .logo-container {
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-item {
@@ -421,6 +501,7 @@ body {
 
 .addres {
   font-style: inherit;
+  margin-right: 60px;
 }
 
 .footer-addres {
