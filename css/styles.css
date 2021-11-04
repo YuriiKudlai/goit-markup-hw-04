@@ -441,6 +441,7 @@ body {
 
 .list-container .list-clients:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients-container {
@@ -499,6 +500,17 @@ body {
 
 .footer-item {
   margin-bottom: 9px;
+}
+
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
 }
 
 .footer {
